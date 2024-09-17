@@ -1,7 +1,7 @@
 import sys
 
 if len(sys.argv) != 2:
-	print('Usage: python luhn_algorithm.py <number>')
+	print(f'Usage: python {sys.argv[0]} <number>')
 	sys.exit(1)
 
 number = sys.argv[1]
@@ -10,7 +10,7 @@ number = sys.argv[1]
 try:
 	number_list = [int(i) for i in number]
 except ValueError:
-	print('Usage: python luhn_algorithm.py <number>')
+	print(f'Usage: python {sys.argv[0]} <number>')
 	sys.exit(2)
 
 # Doubling numbers in odd positions
